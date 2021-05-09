@@ -22,7 +22,8 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
 
-      - name: Deploy Amazon EKS Cluster
+      - name: Deploy mining stack
+        working-directory: ./
         id: eks-cluster
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
