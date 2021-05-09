@@ -30,6 +30,6 @@ jobs:
         id: eks-cluster
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
-          name: eth mining stack
+          name: eth-mining-stack
           template: template.yml
           no-fail-on-empty-changeset: "1"
