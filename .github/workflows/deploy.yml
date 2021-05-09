@@ -5,6 +5,10 @@ on:
     branches:    
       - '*'
 
+defaults:
+  run:
+    working-directory: ./
+
 jobs:
   deployment:
     name: Deploy stack to AWS
@@ -23,7 +27,6 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy mining stack
-        working-directory: ./
         id: eks-cluster
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
