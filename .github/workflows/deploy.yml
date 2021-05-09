@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy Amazon EKS Cluster
         id: eks-cluster
-        uses: aws-actions/aws-cloudformation-github-deploy@master
+        uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: eth mining stack
           template: template.yaml
