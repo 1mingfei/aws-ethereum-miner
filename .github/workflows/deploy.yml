@@ -31,5 +31,5 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: eth mining stack
-          template: template.yaml
+          template: ../template.yaml
           no-fail-on-empty-changeset: "1"
